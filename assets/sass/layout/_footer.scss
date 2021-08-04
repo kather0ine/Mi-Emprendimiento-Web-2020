@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $sable;
+  color: white;
+  padding: 2rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-size: $xxx-large;
+  }
+
+  &__rights-text {
+    font-family: $poppins;
+    font-size: $small;
+    padding-top: 1.9rem;
+    padding-right: 0.4rem;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $poppins;
+    font-size: $small;
+    padding-top: 1rem;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+  }
+  &__links-legal, 
+  &__links-anun {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}

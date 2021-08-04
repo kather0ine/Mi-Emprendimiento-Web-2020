@@ -1,0 +1,31 @@
+ // EXAMPLE //
+
+ /* ACLARACION DE "EXTENDER"
+El "extender" que es 
+
+%mensaje-share {
+    color: $white;
+    font-family: $open-sans;
+ } 
+^Que se tendria que poner en esta misma hoja, y para funcionar más abajo se llama con @extend "y nombre de la extencion"*/ 
+
+ 
+ /* Base styles*/ 
+//body {
+//    height: 100vh;
+//      background-color: $white;
+//    background-image: url("../images/background.jpg");
+//    background-repeat: no-repeat;
+//    box-sizing: cover;
+//    background-position: 80%;
+//}
+
+
+/*base typography*/ 
+//h1, h2, h3 , h4, h5, h6 {
+//    font-family: $open-sans;
+//    font-weight: $regular;
+//    font-size: $medium;
+//}
+
+// -------------------------//

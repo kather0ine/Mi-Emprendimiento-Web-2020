@@ -1,0 +1,13 @@
+.navbar {
+  &__link {
+    @include link-text;
+  }
+  &__img {
+    max-width: 38px;
+  }
+}
+
+/* .icono svg { 
+    fill: white;
+}
+*/

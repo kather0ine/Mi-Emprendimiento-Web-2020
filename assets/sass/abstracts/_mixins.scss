@@ -1,0 +1,24 @@
+@mixin link-text {
+    color: $white!important;
+    &:hover {
+        color: $orange!important;
+    }
+}
+
+@mixin botones {
+    border-radius: 5px;
+    background-color: $tangerine;
+    border-color: $orange;
+    border: 1.5px solid;
+    color: $black;
+    font-size: $small;
+    padding: .3rem 1rem;
+    box-shadow: inset none;
+    margin-left: 5px;
+    
+
+    &:hover {
+        background-color: white;
+        color: $black;
+    }
+}

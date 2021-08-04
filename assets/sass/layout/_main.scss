@@ -1,0 +1,135 @@
+.fa-facebook-square,
+.fa-github-square,
+.fa-twitter-square,
+.fa-thumbs-up,
+.fa-comments,
+.fa-share-alt,
+.fa-eye {
+  color: $black;
+  &:hover {
+    color: $tangerine;
+  }
+}
+
+.main {
+  //Container
+
+  //(group1-group2)
+  &__container-body {
+    padding: 1rem;
+  }
+
+  &__container-group1,
+  &__container-group2 {
+    border: 1px solid black;
+  }
+
+  //   Group 1  //
+  &__container-new1,
+  &__container-new2 {
+    padding: 0.6rem;
+    border: 1px dotted grey;
+  }
+
+  &__title {
+    font-family: $ubuntu;
+    font-size: $large;
+    font-weight: $bold;
+    margin-top: 0.5rem;
+  }
+
+  &__p {
+    //(group1-group2)
+    font-family: $ubuntu;
+    font-weight: $regular;
+    font-size: $x-small;
+    margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: $medium;
+        }
+  }
+
+  &__instructor {
+    font-weight: $bold;
+    font-family: $ubuntu;
+  }
+
+  // icons new1 & new2
+  &__container-icon {
+    justify-content: space-between;
+  }
+
+  &__container-new1-link {
+    color: $black;
+    text-decoration: none !important;
+    &:hover {
+      color: $tangerine;
+    }
+  }
+  //-------------------------*
+
+  //   Group 2  //
+  &__container-img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 6.25rem;
+    margin-top: 0.3rem;
+
+    @media (max-width: 768px) {
+        width: 8rem;
+        }
+
+  }
+
+  &__container-new3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  &__title-course {
+    font-family: $ubuntu;
+    font-size: $small;
+    font-weight: $bold;
+    margin-top: 0.5rem;
+  }
+
+  &__container-new4-title {
+    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+    background-color: rgb(75, 75, 75);
+    color: $white;
+    font-family: $poppins;
+    font-size: $small;
+    font-weight: $bold;
+
+    &:hover {
+      color: $tangerine;
+    }
+
+    @media (max-width: 768px) {
+        font-size: $large;
+        }
+  }
+
+  &__container-new4-links {
+    padding: 0;
+    list-style: none;
+    font-family: $poppins;
+    font-size: $x-small;
+
+    @media (max-width: 768px) {
+        font-size: $small;
+        }
+  }
+
+  &__container-new4-link {
+    color: purple;
+    text-decoration: none !important;
+
+    &:hover {
+      color: $tangerine;
+    }
+  }
+
+}
