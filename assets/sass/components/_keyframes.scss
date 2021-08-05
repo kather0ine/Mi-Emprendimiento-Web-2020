@@ -1,27 +1,57 @@
 .etiqueta {
-  animation: slide 2s infinite linear;
+  -webkit-animation: slide 2s infinite linear;
+          animation: slide 2s infinite linear;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(20%, 0);
+            transform: translate(20%, 0);
+  }
 }
 
 @keyframes slide {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   50% {
-    transform: translate(20%, 0);
+    -webkit-transform: translate(20%, 0);
+            transform: translate(20%, 0);
   }
 }
 
 .rueda {
-  animation: rotacion 3s infinite linear;
-  transform-origin: 80% 80%;
+  -webkit-animation: rotacion 3s infinite linear;
+          animation: rotacion 3s infinite linear;
+  -webkit-transform-origin: 80% 80%;
+      -ms-transform-origin: 80% 80%;
+          transform-origin: 80% 80%;
+}
+
+@-webkit-keyframes rotacion {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes rotacion {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

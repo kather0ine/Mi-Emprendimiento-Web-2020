@@ -14,7 +14,8 @@
     color: $black;
     font-size: $small;
     padding: .07rem 1rem;
-    box-shadow: inset none;
+    -webkit-box-shadow: inset none;
+            box-shadow: inset none;
     margin-left: 5px;
 
     &:hover {

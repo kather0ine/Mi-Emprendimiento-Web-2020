@@ -11,6 +11,7 @@ El "extender" que es
 /*base typography*/
 /* Reset */
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
 }
@@ -142,8 +143,12 @@ img {
 }
 .header__container {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 4.3rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .header__containter-img {
@@ -157,8 +162,14 @@ img {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #060606;
   color: white;
@@ -172,8 +183,15 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-size: 2.5rem;
   }
@@ -190,8 +208,14 @@ img {
   }
 }
 .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
@@ -199,7 +223,11 @@ img {
 }
 @media (max-width: 768px) {
   .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
@@ -261,6 +289,8 @@ img {
   font-family: "Ubuntu", sans-serif;
 }
 .main__container-icon {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .main__container-new1-link {
@@ -343,6 +373,7 @@ img {
   color: #000000;
   font-size: 0.9rem;
   padding: 0.07rem 1rem;
+  -webkit-box-shadow: inset none;
   box-shadow: inset none;
   margin-left: 5px;
 }
@@ -352,27 +383,55 @@ img {
 }
 
 .etiqueta {
+  -webkit-animation: slide 2s infinite linear;
   animation: slide 2s infinite linear;
 }
 
-@keyframes slide {
+@-webkit-keyframes slide {
   0% {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   50% {
+    -webkit-transform: translate(20%, 0);
+    transform: translate(20%, 0);
+  }
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(20%, 0);
     transform: translate(20%, 0);
   }
 }
 .rueda {
+  -webkit-animation: rotacion 3s infinite linear;
   animation: rotacion 3s infinite linear;
+  -webkit-transform-origin: 80% 80%;
+  -ms-transform-origin: 80% 80%;
   transform-origin: 80% 80%;
 }
 
-@keyframes rotacion {
+@-webkit-keyframes rotacion {
   from {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotacion {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }

@@ -58,7 +58,9 @@
 
   // icons new1 & new2
   &__container-icon {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   &__container-new1-link {
