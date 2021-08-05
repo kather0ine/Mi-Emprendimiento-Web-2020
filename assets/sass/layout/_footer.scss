@@ -4,9 +4,10 @@
   justify-content: space-between;
   background-color: $sable;
   color: white;
-  padding: 2rem;
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 
   @media (max-width: 768px) {
     padding-left: 1rem;
@@ -15,12 +16,12 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    font-size: $xxx-large;
+    font-size: $xx-large;
   }
 
   &__rights-text {
     font-family: $poppins;
-    font-size: $small;
+    font-size: $x-small;
     padding-top: 1.9rem;
     padding-right: 0.4rem;
 
@@ -35,7 +36,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: $poppins;
-    font-size: $small;
+    font-size: $x-small;
     padding-top: 1rem;
 
     @media (max-width: 768px) {

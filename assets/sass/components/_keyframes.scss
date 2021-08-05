@@ -1,4 +1,33 @@
 .etiqueta {
+  animation: slide 2s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20%, 0);
+  }
+}
+
+.rueda {
+  animation: rotacion 3s infinite linear;
+  transform-origin: 80% 80%;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* codigo en clases//
+.etiqueta {
   animation: slide 1.8s infinite linear;
 }
 
@@ -19,3 +48,5 @@
     from { transform:rotate(0deg); transform-origin: 80% 80%}
     to { transform: rotate(90deg);transform-origin: 80% 80% }
 }
+
+*/

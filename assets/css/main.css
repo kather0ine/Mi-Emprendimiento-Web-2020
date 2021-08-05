@@ -162,9 +162,10 @@ img {
   justify-content: space-between;
   background-color: #060606;
   color: white;
-  padding: 2rem;
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 @media (max-width: 768px) {
   .footer {
@@ -174,12 +175,12 @@ img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    font-size: 2.813rem;
+    font-size: 2.5rem;
   }
 }
 .footer__rights-text {
   font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-top: 1.9rem;
   padding-right: 0.4rem;
 }
@@ -193,7 +194,7 @@ img {
   align-items: center;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-top: 1rem;
 }
 @media (max-width: 768px) {
@@ -216,6 +217,7 @@ img {
 .fa-share-alt,
 .fa-eye {
   color: #000000;
+  margin-right: 0.2rem;
 }
 .fa-facebook-square:hover,
 .fa-github-square:hover,
@@ -340,7 +342,7 @@ img {
   border: 1.5px solid;
   color: #000000;
   font-size: 0.9rem;
-  padding: 0.3rem 1rem;
+  padding: 0.07rem 1rem;
   box-shadow: inset none;
   margin-left: 5px;
 }
@@ -349,6 +351,32 @@ img {
   color: #000000;
 }
 
+.etiqueta {
+  animation: slide 2s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20%, 0);
+  }
+}
+.rueda {
+  animation: rotacion 3s infinite linear;
+  transform-origin: 80% 80%;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* codigo en clases//
 .etiqueta {
   animation: slide 1.8s infinite linear;
 }
@@ -361,20 +389,17 @@ img {
     transform: translate(20%, 0);
   }
 }
+
 .rueda {
-  animation: rotacion 2s infinite linear;
+    animation: rotacion 2s infinite linear;
+  }
+
+  @keyframes rotacion {
+    from { transform:rotate(0deg); transform-origin: 80% 80%}
+    to { transform: rotate(90deg);transform-origin: 80% 80% }
 }
 
-@keyframes rotacion {
-  from {
-    transform: rotate(0deg);
-    transform-origin: 80% 80%;
-  }
-  to {
-    transform: rotate(90deg);
-    transform-origin: 80% 80%;
-  }
-}
+*/
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

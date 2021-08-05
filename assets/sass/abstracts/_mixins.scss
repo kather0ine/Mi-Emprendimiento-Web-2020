@@ -1,4 +1,5 @@
 @mixin link-text {
+    
     color: $white!important;
     &:hover {
         color: $orange!important;
@@ -12,7 +13,7 @@
     border: 1.5px solid;
     color: $black;
     font-size: $small;
-    padding: .3rem 1rem;
+    padding: .07rem 1rem;
     box-shadow: inset none;
     margin-left: 5px;
 
