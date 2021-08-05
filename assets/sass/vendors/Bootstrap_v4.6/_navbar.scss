@@ -315,10 +315,17 @@
     border-color: $navbar-dark-toggler-border-color;
   }
 
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-dark-toggler-icon-bg);
-  }
 
+  
+  .navbar-toggler-icon {
+    background-image: url(/assets/img/bars-white.png);
+    background-size: 1.6rem;
+    &:hover {
+      background-image: url(/assets/img/bars-orange.png);
+    }
+  } 
+
+  
   .navbar-text {
     color: $navbar-dark-color;
     a {
