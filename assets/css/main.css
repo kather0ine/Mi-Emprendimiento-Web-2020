@@ -29,6 +29,9 @@ img {
 .navbar__img {
   max-width: 38px;
 }
+.navbar__container button {
+  border: none;
+}
 
 /* .icono svg { 
     fill: white;
@@ -196,7 +199,6 @@ img {
 @media (max-width: 768px) {
   .footer__links {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
   }
 }
@@ -321,6 +323,14 @@ img {
 }
 .main__container-new4-link:hover {
   color: #FFAF6D;
+}
+
+.main__container-svg {
+  width: 10rem;
+  margin-right: 35%;
+  margin-left: 35%;
+  position: relative;
+  padding-bottom: 3rem;
 }
 
 .button_enviar {
